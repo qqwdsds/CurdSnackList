@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rv_item"
+    android:layout_width="100dp"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="13dp"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/rv_imageCurdSnack"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        tools:background="@drawable/ic_launcher_background"
+        tools:src="@drawable/ic_launcher_foreground" />
+
+    <View
+        android:id="@+id/item_selected"
+        android:layout_height="23dp"
+        android:layout_width="23dp"
+        android:background="@drawable/background_selector"
+        android:layout_gravity="center"/>
+
+</LinearLayout>
