@@ -13,4 +13,14 @@
         <item name="android:statusBarColor">#000000</item>
         <!-- Customize your theme here. -->
     </style>
+
+    <!-- Style for TextView. -->
+    <style name="textview_style">
+        <item name="android:textSize">15sp</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:padding">3dp</item>
+        <item name="android:textColor">#0F0E9F</item>
+    </style>
+
+
 </resources>

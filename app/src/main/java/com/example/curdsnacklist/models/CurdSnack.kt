@@ -1,4 +1,4 @@
-package com.example.curdsnacklist
+package com.example.curdsnacklist.models
 
 import android.os.Parcelable
 import kotlinx.parcelize.Parcelize

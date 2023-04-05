@@ -16,7 +16,7 @@
             app:popUpToInclusive="true" />
         <argument
             android:name="curd_snack"
-            app:argType="com.example.curdsnacklist.CurdSnack"
+            app:argType="com.example.curdsnacklist.models.CurdSnack"
             app:nullable="true"
             android:defaultValue="@null" />
     </fragment>

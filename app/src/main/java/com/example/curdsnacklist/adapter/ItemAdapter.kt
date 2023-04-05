@@ -1,4 +1,4 @@
-package com.example.curdsnacklist
+package com.example.curdsnacklist.adapter
 
 import android.util.Log
 import android.view.LayoutInflater
@@ -7,6 +7,9 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.bumptech.glide.load.engine.DiskCacheStrategy
+import com.example.curdsnacklist.models.CurdSnack
+import com.example.curdsnacklist.CurdSnackActivity
+import com.example.curdsnacklist.R
 import com.example.curdsnacklist.databinding.CurdSnackImageBinding
 
 class ItemAdapter(val curdSnackList: ArrayList<CurdSnack>, val launchFragment: (curdSnack: CurdSnack) -> Unit) :
@@ -50,7 +53,7 @@ class ItemAdapter(val curdSnackList: ArrayList<CurdSnack>, val launchFragment: (
 
                     Log.d("ItemAdapter", "After second notify Context: $this")
                     // notify MainActivity that item position has been selected
-                    MainActivity.newItemSelected(selected_item_position)
+                    CurdSnackActivity.newItemSelected(selected_item_position)
 
                     // launch info fragment
                     launchFragment(curdSnackList[selected_item_position])
@@ -73,7 +76,7 @@ class ItemAdapter(val curdSnackList: ArrayList<CurdSnack>, val launchFragment: (
         holder.bind(curdSnackList[position], position)
     }
 
-    //change item sate in recycler view when item was selected without using recycler view elements
+    //change item sate in recyclerview when item was selected without using recycler view elements
     fun selectedCurdSnack(position: Int) {
         notifyItemChanged(selected_item_position)
 

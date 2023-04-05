@@ -25,10 +25,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Вид:"
-            android:textSize="15sp"
-            android:layout_marginTop="10dp"
-            android:textColor="#0F0E9F"
-            android:padding="3dp"
+            style="@style/textview_style"
             app:layout_constraintStart_toStartOf="@id/image_curd_snack"
             app:layout_constraintTop_toBottomOf="@id/image_curd_snack"/>
 
@@ -37,10 +34,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Жирність:"
-            android:textSize="15sp"
-            android:layout_marginTop="10dp"
-            android:textColor="#0F0E9F"
-            android:padding="3dp"
+            style="@style/textview_style"
             app:layout_constraintStart_toStartOf="@id/species"
             app:layout_constraintTop_toBottomOf="@id/species"/>
 
@@ -49,10 +43,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Вага одиниці, грам:"
-            android:textSize="15sp"
-            android:layout_marginTop="10dp"
-            android:textColor="#0F0E9F"
-            android:padding="3dp"
+            style="@style/textview_style"
             app:layout_constraintStart_toStartOf="@id/fats"
             app:layout_constraintTop_toBottomOf="@id/fats"/>
 
@@ -61,10 +52,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Вид упаковки:"
-            android:textSize="15sp"
-            android:layout_marginTop="10dp"
-            android:textColor="#0F0E9F"
-            android:padding="3dp"
+            style="@style/textview_style"
             app:layout_constraintStart_toStartOf="@id/weight"
             app:layout_constraintTop_toBottomOf="@id/weight"/>
 
@@ -73,10 +61,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Кількість у ящику, штук:"
-            android:textSize="15sp"
-            android:layout_marginTop="10dp"
-            android:textColor="#0F0E9F"
-            android:padding="3dp"
+            style="@style/textview_style"
             app:layout_constraintStart_toStartOf="@id/type_of_packaging"
             app:layout_constraintTop_toBottomOf="@id/type_of_packaging"/>
 
@@ -85,10 +70,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Умови зберігання:"
-            android:textSize="15sp"
-            android:layout_marginTop="10dp"
-            android:textColor="#0F0E9F"
-            android:padding="3dp"
+            style="@style/textview_style"
             app:layout_constraintStart_toStartOf="@id/amount"
             app:layout_constraintTop_toBottomOf="@id/amount"/>
 
@@ -97,10 +79,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Термін зберігання, діб:"
-            android:textSize="15sp"
-            android:layout_marginTop="10dp"
-            android:textColor="#0F0E9F"
-            android:padding="3dp"
+            style="@style/textview_style"
             app:layout_constraintStart_toStartOf="@id/storage_conditions"
             app:layout_constraintTop_toBottomOf="@id/storage_conditions"/>
 
@@ -109,10 +88,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Штрих-код:"
-            android:textSize="15sp"
-            android:layout_marginTop="10dp"
-            android:textColor="#0F0E9F"
-            android:padding="3dp"
+            style="@style/textview_style"
             app:layout_constraintStart_toStartOf="@id/expiration_date"
             app:layout_constraintTop_toBottomOf="@id/expiration_date"/>
 
@@ -122,11 +98,8 @@
             android:id="@+id/text_species"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Вид:"
-            android:textSize="15sp"
-            android:layout_marginTop="10dp"
-            android:textColor="#0F0E9F"
-            android:padding="3dp"
+            android:text="@string/placeholder"
+            style="@style/textview_style"
             app:layout_constraintEnd_toEndOf="@id/image_curd_snack"
             app:layout_constraintTop_toBottomOf="@id/image_curd_snack"/>
 
@@ -134,11 +107,8 @@
             android:id="@+id/text_fats"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Жирність:"
-            android:textSize="15sp"
-            android:layout_marginTop="10dp"
-            android:textColor="#0F0E9F"
-            android:padding="3dp"
+            android:text="@string/placeholder"
+            style="@style/textview_style"
             app:layout_constraintEnd_toEndOf="@id/image_curd_snack"
             app:layout_constraintTop_toBottomOf="@id/text_species"/>
 
@@ -146,11 +116,8 @@
             android:id="@+id/text_weight"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Вага одиниці, грам:"
-            android:textSize="15sp"
-            android:layout_marginTop="10dp"
-            android:textColor="#0F0E9F"
-            android:padding="3dp"
+            android:text="@string/placeholder"
+            style="@style/textview_style"
             app:layout_constraintEnd_toEndOf="@id/image_curd_snack"
             app:layout_constraintTop_toBottomOf="@id/text_fats"/>
 
@@ -158,11 +125,8 @@
             android:id="@+id/text_type_of_packaging"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Вид упаковки:"
-            android:textSize="15sp"
-            android:layout_marginTop="10dp"
-            android:textColor="#0F0E9F"
-            android:padding="3dp"
+            android:text="@string/placeholder"
+            style="@style/textview_style"
             app:layout_constraintEnd_toEndOf="@id/image_curd_snack"
             app:layout_constraintTop_toBottomOf="@id/text_weight"/>
 
@@ -170,11 +134,8 @@
             android:id="@+id/text_amount"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Кількість у ящику, штук:"
-            android:textSize="15sp"
-            android:layout_marginTop="10dp"
-            android:textColor="#0F0E9F"
-            android:padding="3dp"
+            android:text="@string/placeholder"
+            style="@style/textview_style"
             app:layout_constraintEnd_toEndOf="@id/image_curd_snack"
             app:layout_constraintTop_toBottomOf="@id/text_type_of_packaging"/>
 
@@ -182,11 +143,8 @@
             android:id="@+id/text_storage_conditions"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Умови зберігання:"
-            android:textSize="15sp"
-            android:layout_marginTop="10dp"
-            android:textColor="#0F0E9F"
-            android:padding="3dp"
+            android:text="@string/placeholder"
+            style="@style/textview_style"
             app:layout_constraintEnd_toEndOf="@id/image_curd_snack"
             app:layout_constraintTop_toBottomOf="@id/text_amount"/>
 
@@ -194,11 +152,8 @@
             android:id="@+id/text_expiration_date"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Термін зберігання, діб:"
-            android:textSize="15sp"
-            android:layout_marginTop="10dp"
-            android:textColor="#0F0E9F"
-            android:padding="3dp"
+            android:text="@string/placeholder"
+            style="@style/textview_style"
             app:layout_constraintEnd_toEndOf="@id/image_curd_snack"
             app:layout_constraintTop_toBottomOf="@id/text_storage_conditions"/>
 
@@ -206,11 +161,8 @@
             android:id="@+id/text_bar_code"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Штрих-код:"
-            android:textSize="15sp"
-            android:layout_marginTop="10dp"
-            android:textColor="#0F0E9F"
-            android:padding="3dp"
+            android:text="@string/placeholder"
+            style="@style/textview_style"
             app:layout_constraintEnd_toEndOf="@id/image_curd_snack"
             app:layout_constraintTop_toBottomOf="@id/text_expiration_date"/>
 

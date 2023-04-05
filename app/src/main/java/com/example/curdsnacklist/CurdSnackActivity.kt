@@ -5,11 +5,13 @@ import android.os.Bundle
 import androidx.navigation.findNavController
 import androidx.navigation.navOptions
 import androidx.recyclerview.widget.GridLayoutManager
+import com.example.curdsnacklist.adapter.ItemAdapter
 import com.example.curdsnacklist.databinding.ActivityMainBinding
 import com.example.curdsnacklist.fragments.CurdSnackInfoFragmentDirections
+import com.example.curdsnacklist.models.CurdSnack
 import java.util.*
 
-class MainActivity : AppCompatActivity() {
+class CurdSnackActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
 
     private val curdSnackList = arrayListOf<CurdSnack>(
@@ -178,9 +180,9 @@ class MainActivity : AppCompatActivity() {
         binding.buttonRight.setOnClickListener {
             nextCurdSnack()
         }
-
     }
 
+    // hardware back button
     override fun onBackPressed() {
         if (stack_item_positions.size > 1) {
             stack_item_positions.pop()
