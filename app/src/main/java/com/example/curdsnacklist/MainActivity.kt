@@ -210,8 +210,9 @@ class MainActivity : AppCompatActivity() {
 
     // next curd snack item in fragment container
     private fun nextCurdSnack() {
+        if (stack_item_positions.peek() == 11) return
+
         stack_item_positions.add(stack_item_positions.peek() + 1)
-        if (stack_item_positions.peek() > 11) stack_item_positions.add(0)
 
         val destination =
             CurdSnackInfoFragmentDirections.actionCurdSnackInfoFragmentSelf(curdSnackList[stack_item_positions.peek()])
@@ -237,21 +238,6 @@ class MainActivity : AppCompatActivity() {
             adapter.selectedCurdSnack(stack_item_positions.peek())
 
             supportFragmentManager.popBackStack()
-
-            /*val destination =
-                CurdSnackInfoFragmentDirections.actionCurdSnackInfoFragmentSelf(curdSnackList[stack_item_positions.peek()])
-
-            findNavController(R.id.fragmentContainer).navigate(destination,
-                navOptions {
-                    anim {
-                        enter = R.anim.from_left
-                        exit = R.anim.to_right
-                        popEnter = R.anim.from_right
-                        popExit = R.anim.to_left
-                    }
-                })*/
-
-
         }
     }
 

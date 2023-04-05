@@ -34,6 +34,7 @@ class ItemAdapter(val curdSnackList: ArrayList<CurdSnack>, val launchFragment: (
             }
 
             binding.rvItem.setOnClickListener {
+                // if selected_item_position equals adapterPosition OnClick doesn't work
                 if(selected_item_position != adapterPosition) {
                     Log.d("ItemAdapter", "Before Context: $this")
 
